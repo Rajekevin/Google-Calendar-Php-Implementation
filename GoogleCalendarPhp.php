@@ -63,6 +63,11 @@
         $updatedEvent = $service->events->update($calendarId,$updatedEvent->getId(), $updatedEvent);
         echo $updatedEvent->getUpdated();
 
+        /*##################### DELETE AN EVENT ###########################*/
+        $deleteEvent = $service->events->get($calendarId, '{{ idEvent }}';
+        $service->events->delete($calendarId, $deleteEvent->getId());
+        echo "your event is deleted";
+
 
         
          
